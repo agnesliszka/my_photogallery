@@ -46,13 +46,41 @@ body{
 }
 
 .photo{
-    background: cover;
     width: 17vw;
     height: 17vw;
 }
-/* 
-.small img{
-    text-align: center;
-    background-size: contain;
-    align-self: center;
-} */
+
+.small{
+    position: relative;
+}
+
+.fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: grey;
+    font-size: 80%;
+    cursor: pointer;
+}
+
+.fas:hover{
+    color: rgb(200, 200, 200);
+}
+
+.hidden{
+    display: none;
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    bottom: 3%;
+    background-color: transparent;
+    width: 98%;
+    height: 10%;
+    cursor: auto;
+}
+
+.small:hover .hidden{
+    display: block;
+    background-color: white;
+}

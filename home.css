@@ -15,7 +15,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 70px;
-    width: 100vw;
+    width: 100%;
     background-color:rgb(131, 170, 234);
     color: white;
     text-transform: uppercase;    
@@ -26,6 +26,11 @@ body{
 .menu_inside{
     margin-left: 10px;
     margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .image{
@@ -41,20 +46,21 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: 100vw;
-    height: 220vh;
+    width: 90vw;
+    height: 195vh;
+}
+
+.small{
+    position: relative;    
 }
 
 .photo{
     width: 17vw;
     height: 17vw;
+    box-shadow: 0 0 2px 2px rgb(88, 84, 84);
 }
 
-.small{
-    position: relative;
-}
-
-.fas{
+.fa-star{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -64,7 +70,7 @@ body{
     cursor: pointer;
 }
 
-.fas:hover{
+.fa-star:hover{
     color: rgb(200, 200, 200);
 }
 
@@ -78,6 +84,7 @@ body{
     width: 98%;
     height: 10%;
     cursor: auto;
+    z-index: 1;
 }
 
 .small:hover .hidden{

@@ -96,11 +96,20 @@ body{
     text-transform: uppercase;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .button:hover{
     background-color: rgb(39, 36, 36);
-    color: rgb(255,255,255,1);
     cursor: pointer;
 }
+
+.button:hover a{
+    color: rgb(255,255,255,1);
+}
+
 
 </style>
 
@@ -114,7 +123,7 @@ body{
             <span class = "second"></span>
             <span class = "third">AGNIESZKA LISZKA</span>
         </div>
-        <div class="button">Open gallery</div>
+        <div class="button"><a href="home.html">Open gallery</a></div>
     </div>
 
 </body>

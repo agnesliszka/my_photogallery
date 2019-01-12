@@ -1,15 +1,27 @@
+linkToPhoto = document.querySelector(".big");
+rectangle = document.querySelector(".hidden");
 favourite = document.querySelector(".fa-star");
+getHref = document.querySelector(".big").getAttribute("href");
 
-smallPhoto = document.querySelector(".small");
-rectangle = document.querySelector(".hidden")
+// Changing href to " " and to original href
+hrefs = []
+hrefs.push(getHref);
 
-function href(){
-    smallPhoto.href="";
+function hrefNone(){
+    linkToPhoto.href = "#";
 }
 
+function hrefBack(){
+    linkToPhoto.href = hrefs[0];
+}
+
+rectangle.addEventListener('mouseover', hrefNone)
+rectangle.addEventListener('mouseout', hrefBack)
+
+
+// Adding favourite class
 function addClass(){
-    favourite.classList.toggle("favourite");
+   favourite.classList.toggle("favourite");
 }
 
-rectangle.addEventListener('mouseover', href)
 favourite.addEventListener('click', addClass)

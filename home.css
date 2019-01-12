@@ -50,7 +50,7 @@ a{
     height: 195vh;
 }
 
-.small{
+.big{
     position: relative;    
 }
 
@@ -87,7 +87,7 @@ a{
     z-index: 1;
 }
 
-.small:hover .hidden{
+.big:hover .hidden{
     display: block;
     background-color: white;
 }

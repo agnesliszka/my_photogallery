@@ -13,13 +13,13 @@
             <div class="menu">
                 <i class="fas fa-home"></i><span class="menu_inside"><a href="home.html">HOME</a></span>
                 <i class="fas fa-info-circle"></i><span class="menu_inside"><a href="info.html">INFO</a></span>
-                <i class="fab fa-slideshare"></i><span class="menu_inside"><a href="slideshow.html">SLIDESHOW</a></span>
+                <i class="fas fa-video"></i><span class="menu_inside"><a href="slideshow.html">SLIDESHOW</a></span>
                 <i class="fas fa-heart"></i><span class="menu_inside"><a href="favourites.html">FAVOURITES</a></span>
             </div>
         </div>
-        <section>
+        <section class="whole_page">
             <div class="image">
-                <img src="my_gallery.png" alt="my gallery" width="150" height="70">
+                <img class="img" src="my_gallery.png" alt="my gallery" width="150" height="70">
             </div>
             <div class="gallery">
                 <a class="big" href="photos/1.jpeg" data-lightbox="image">
@@ -173,7 +173,24 @@
                 </a>
             </div>
         </section>
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="favourites.js"></script>     
+        <section class="modal-wrap">
+            <div class="modal">
+                <span class="hide">X</span>
+                <div class="picked"><img class="photosPicked" src="photos_picked.jpg" alt="Photos picked"></div>
+            </div>
+        </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="favourites.js"></script>    
+    <script>        
+    document.querySelector('.image').addEventListener("click", function () {
+    document.querySelector('.modal-wrap').classList.add('active');
+    document.querySelector('.whole_page').classList.add('blur')
+    })
+
+    document.querySelector('span.hide').addEventListener("click", function () {
+    document.querySelector('.modal-wrap').classList.remove('active');
+    document.querySelector('.whole_page').classList.remove('blur')
+    })
+    </script> 
     </body>
 </html>

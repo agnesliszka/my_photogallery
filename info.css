@@ -10,7 +10,7 @@ body{
     justify-content: center;
     }
 
-.menu{
+.menu_outside{
     display: flex;
     align-items: center;
     justify-content: center;

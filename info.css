@@ -36,12 +36,16 @@ body{
     margin-right: 20px;
 }
 
-a{
+.menu_inside a{
     text-decoration: none;
     color: white;
 }
 
-#title:hover, a:hover{
+.menu_inside i{
+    margin-right: 10px;
+}
+
+.menu_inside:hover, a:hover{
     color: black;
     font-weight: bold;
 }
@@ -139,14 +143,12 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@media(max-width: 640px){
-.info{
-    margin-left: 5vw;
-    justify-content: flex-start;
-}
+@media (max-width: 640px){
+    .site_title{
+        display: none;
+    }
 
-.detail{
-    font-size: 14px;
-}
-
+    .menu_outside{
+        font-size: 18px;
+    }
 }

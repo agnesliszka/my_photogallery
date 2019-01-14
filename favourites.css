@@ -36,9 +36,13 @@ body{
     margin-right: 20px;
 }
 
-a{
+.menu_inside a{
     text-decoration: none;
     color: white;
+}
+
+.menu_inside i{
+    margin-right: 10px;
 }
 
 #title:hover, a:hover{
@@ -78,7 +82,7 @@ a{
     }
 
 .img{
-    box-shadow: 0 0 3px 3px #ccc;
+    box-shadow: 0 0 20px 3px #ccc;
 }
 
 .gallery{
@@ -198,3 +202,12 @@ a{
     padding: 50px 0;
 }
 
+@media (max-width: 640px){
+    .site_title{
+        display: none;
+    }
+
+    .menu_outside{
+        font-size: 18px;
+    }
+} 

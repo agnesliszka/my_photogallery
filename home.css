@@ -36,9 +36,13 @@ body{
     margin-right: 20px;
 }
 
-a{
+.menu_inside a{
     text-decoration: none;
     color: white;
+}
+
+.menu_inside i{
+    margin-right: 10px;
 }
 
 #title:hover, a:hover{
@@ -126,9 +130,13 @@ a{
     display: block;
     background-color: white;
 }
-/* 
-@media (max-width: 1024px){
-    span{
+
+@media (max-width: 640px){
+    .site_title{
         display: none;
     }
-} */ - czemu nie dziala
+
+    .menu_outside{
+        font-size: 18px;
+    }
+} 

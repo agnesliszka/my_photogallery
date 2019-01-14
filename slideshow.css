@@ -36,9 +36,13 @@ body{
     margin-right: 20px;
 }
 
-a{
+.menu_inside a{
     text-decoration: none;
     color: white;
+}
+
+.menu_inside i{
+    margin-right: 10px;
 }
 
 #title:hover, a:hover{
@@ -120,3 +124,12 @@ a{
     }
 }
 
+@media (max-width: 640px){
+    .site_title{
+        display: none;
+    }
+
+    .menu_outside{
+        font-size: 18px;
+    }
+} 

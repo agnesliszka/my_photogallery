@@ -1,0 +1,22 @@
+var checkScrollBars = function(){
+    var body = $('body');
+    var normalWidth = 0;
+    var scrollWidth = 0;
+    if(body.prop('scrollHeight')>body.height()){
+        normalWidth = window.innerWidth;
+        scrollWidth = normalWidth - body.width();
+        $('.menu').css({marginRight:'-'+scrollWidth+'px'});
+    }
+}
+
+$(function(){
+    checkScrollBars();
+    $('.menu').click(function(){
+        $('body').css('overflow-y', 'auto');
+        checkScrollBars();
+    })
+    $('#hidebar').click(function(){
+        $('body').css('overflow-y', 'hidden');
+        checkScrollBars();
+    })
+});

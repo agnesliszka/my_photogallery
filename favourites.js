@@ -23,4 +23,3 @@ $rectangle.on("mouseover", hrefNone);
 $rectangle.on("mouseout", hrefBack);
 $favourite.on("click", favourites);
 
-

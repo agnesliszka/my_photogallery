@@ -86,11 +86,11 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 90vw;
-    height: 195vh;
 }
 
 .big{
-    position: relative;    
+    position: relative;  
+    margin-bottom: 1vh;  
 }
 
 .photo{
@@ -138,5 +138,9 @@ body{
 
     .menu_outside{
         font-size: 18px;
+    }
+
+    .big{
+        margin-bottom: 0.5vh;  
     }
 } 

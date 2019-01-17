@@ -91,11 +91,11 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 90vw;
-    height: 195vh;
 }
 
 .big{
     position: relative;    
+    margin-bottom: 1vh;  
 }
 
 .photo{
@@ -136,6 +136,23 @@ body{
     background-color: white;
 }
 
+.small_square{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    height: 15%;
+    border-radius: 20%;
+}
+
+.small_square.active{
+    display: block;
+    background-color: black;
+    color: rgb(200, 200, 200);
+    opacity: 90%;
+}
+
 .whole_page.blur{
     filter: blur(10px);
    }
@@ -145,7 +162,7 @@ body{
 }
  
 .modal-wrap.active{
-    display: block;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -178,7 +195,7 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(50%, -50%);
+    transform: translate(50%, -50%); 
     font-family: arial;
     font-size: 30px;
     background-color: #fff;
@@ -191,11 +208,13 @@ body{
  }
 
 .picked{
-    position: absolute;
+    position: absolute; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
+    transform: translate(-50%, -50%); 
+    max-width: 70%;
+    max-height: 70%;
+    background-color: black;
 }
 
 .photosPicked{
@@ -209,5 +228,9 @@ body{
 
     .menu_outside{
         font-size: 18px;
+    }
+
+    .big{
+        margin-bottom: 0.5vh;  
     }
 } 

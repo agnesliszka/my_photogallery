@@ -95,7 +95,7 @@ body{
 
 .big{
     position: relative;    
-    margin-bottom: 1vh;  
+    margin-bottom: 1.5vh;  
 }
 
 .photo{
@@ -110,7 +110,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     color: grey;
-    font-size: 80%;
+    font-size: 120%;
     cursor: pointer;
 }
 
@@ -126,7 +126,7 @@ body{
     bottom: 3%;
     background-color: transparent;
     width: 98%;
-    height: 10%;
+    height: 15%;
     cursor: auto;
     z-index: 1;
 }
@@ -178,7 +178,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 70%;
     height: 70%;
     border: 2px solid black;
     background-color: black; 
@@ -208,18 +208,17 @@ body{
  }
 
 .picked{
+    display: flex;
     position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    max-width: 70%;
-    max-height: 70%;
-    background-color: black;
 }
-
 .photosPicked{
-    padding: 50px 0;
-}
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 90%;    
+} 
 
 @media (max-width: 640px){
     .site_title{

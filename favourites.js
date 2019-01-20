@@ -35,27 +35,28 @@ const $timeChange = 3000;
 const $favouriteImageSource = $('.photosPicked');
 let $favouritesTable =[]
 
-$('.image').on('click', function () {
-$('.modal-wrap').addClass('active');
-$('.whole_page').addClass('blur');
-
-$favouritesTable = $('.favourite');
-
-// Slideshow
-function changeElement() {
-$activeElement++;
-if ($activeElement == $favouritesTable.length) {
-$activeElement = 0;
+ // Slideshow
+ function changeElement() {
+    
+    if ($activeElement == $favouritesTable.length) {
+        $activeElement = 0;
+    }
+     
+    $favouriteImageSource.attr("src", $favouritesTable[$activeElement])
+    $activeElement++;
 }
 
-$favouriteImageSource.attr("src", $favouritesTable[$activeElement])
-}
-setInterval(changeElement, $timeChange);
+$('.img').on('click', function () {
+    $('.modal-wrap').addClass('active');
+    $('.whole_page').addClass('blur');
+
+    $favouritesTable = $('.favourite');
+    setInterval(changeElement, $timeChange);
 })
 
 //To close pop-up
-    $('span.hide').on('click', function () {
+$('span.hide').on('click', function () {
     $('.modal-wrap').removeClass('active');
     $('.whole_page').removeClass('blur');
-    })
+})
 

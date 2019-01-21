@@ -125,9 +125,10 @@ body{
     bottom: 3%;
     background-color: transparent;
     width: 98%;
-    height: 10%;
+    height: 12%;
     cursor: auto;
     z-index: 1;
+    font-size: 130%;
 }
 
 .big:hover .hidden{
@@ -305,6 +306,7 @@ span a{
     background-color: black;
     color: rgb(200, 200, 200);
     opacity: 90%;
+    font-size: 120%;
 }
 
 .whole_page.blur{
@@ -368,6 +370,7 @@ span a{
     left: 50%;
     transform: translate(-50%, -50%); 
 }
+
 .photosPicked{
     margin: 0 auto;
     max-width: 90%;

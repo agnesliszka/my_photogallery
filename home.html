@@ -100,6 +100,9 @@
         // const bigImages = document.querySelectorAll(".big").getAttribute("href");
         document.querySelector('.menu').addEventListener("click", function () {
             document.querySelector('.menu').classList.add("clicked")
+        })    
+        document.querySelector('.menu').addEventListener("mouseout", function () {
+            document.querySelector('.menu').classList.remove("clicked") 
         })
     </script>
 </body>

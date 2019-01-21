@@ -29,6 +29,25 @@ body{
     display: flex;
     align-items: center;
     transition: 0.5s;
+    animation: moveToTheRight 0.5s 1 linear;
+}
+
+@keyframes moveToTheRight{
+    0%{
+        margin-right: 0;
+    }
+    25%{
+        margin-right: 3vw;
+    }
+    50%{
+        margin-right: 5vw;
+    }
+    75%{
+        margin-right: 3vw;
+    }
+    100%{
+        margin-right: 0;
+    }
 }
 
 .menu_inside{
@@ -50,28 +69,6 @@ body{
 .menu_inside:hover, a:hover{
     color: black;
     font-weight: bold;
-}
-
-.menu:hover{ 
-    animation: moveToTheRight 0.5s 1 linear; 
-}
-
-@keyframes moveToTheRight{
-    0%{
-        margin-right: 0;
-    }
-    25%{
-        margin-right: 3vw;
-    }
-    50%{
-        margin-right: 5vw;
-    }
-    75%{
-        margin-right: 3vw;
-    }
-    100%{
-        margin-right: 0;
-    }
 }
 
 .image{
@@ -388,5 +385,14 @@ span a{
 
     .big{
         margin-bottom: 0.5vh;  
+    }
+
+    .small_square.active{
+        font-size: 80%;
+    }
+
+    .hidden{
+        height: 15%;
+        font-size: 90%;
     }
 } 

@@ -42,6 +42,9 @@ $('.img').on('click', function () {
     $favouritesTable = $('.favourite');
     
     let $activeElement = 0;
+    $favouriteImageSource.attr("src", $favouritesTable[$activeElement])
+    $activeElement++;
+                
     $refreshIntervalId = setInterval(function changeElement() {
         if ($activeElement == $favouritesTable.length) {
             $activeElement = 0;

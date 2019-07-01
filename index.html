@@ -4,106 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="dist/css/lightbox.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">   
+    <title>Intro</title>
+    <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
 </head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("intro.jpeg");
+    background-size: cover;
+    transition: 1s;
+    animation: apperance 3s 1 linear both;
+}
+
+.container{
+    position: relative;
+    background-color: white;
+    opacity: 0.3;
+    height: 100vh;
+    width: 20vw;
+    left: 0;
+    animation: container_apperance 3s 1 linear both; 
+}
+
+@keyframes container_apperance{
+    0% {
+        opacity: 0;
+
+    }
+    30% {
+        opacity: 0.01;
+    }
+    60% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.image{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.first, .second, .third{
+    display: block;
+    padding: 0 10px;
+    color: black;
+}
+
+.first{
+    font: 2vw 'Arizonia', Helvetica, sans-serif;
+    margin-left: 2.5vw;
+}
+
+.second{
+    border-top: 1px solid black;
+    margin-left: 2.5vw;
+}
+
+.third{
+    font-size: 1vw;
+    text-transform: uppercase;
+    margin-left: 4vw;
+    margin-top: 1vw;
+}
+
+.button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    color: black;
+    border: solid black 1px;
+    padding: 2vh 0.5vw;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover{
+    background-color: rgb(39, 36, 36);
+    cursor: pointer;
+}
+
+.button:hover a{
+    color: rgb(255,255,255,1);
+}
+
+
+</style>
+
 <body>
-    <div id="navbar"></div> 
-        <section>
+    <div class="container">
         <div class="image">
             <img src="my_gallery.png" alt="my gallery" width="150" height="70">
         </div>
-        <div class="gallery">
-            <a class="big" href="photos/1.jpeg" data-lightbox="image">
-                <img class="photo" src="photos_small/1s.jpg">
-            </a>
-            <a class="big" href="photos/2.jpeg" data-lightbox="image">
-                <img class="photo" src="photos_small/2s.jpg">
-            </a>
-            <a class="big" href="photos/3.jpeg" data-lightbox="image">
-                <img class="photo" src="photos_small/3s.jpg">
-            </a>
-            <a class="big" href="photos/4.jpeg" data-lightbox="image">
-                <img class="photo" src="photos_small/4s.jpg">
-            </a>
-            <a class="big" href="photos/5.jpeg" data-lightbox="image">
-                <img class="photo" src="photos_small/5s.jpg">
-            </a>
-            <a class="big" href="photos/6.jpeg" data-lightbox="image">
-                <img class="photo" src="photos_small/6s.jpg">
-            </a>
-            <a class="big" href="photos/7.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/7s.jpg">
-            </a>
-            <a class="big" href="photos/8.jpeg" data-lightbox="image">
-                <img class="photo" src="photos_small/8s.jpg">
-            </a>
-            <a class="big" href="photos/9.jpeg" data-lightbox="image">
-                <img class="photo" src="photos_small/9s.jpg">
-            </a>
-            <a class="big" href="photos/10.jpeg" data-lightbox="image">
-                <img class="photo" src="photos_small/10s.jpg">
-            </a>
-            <a class="big" href="photos/11.jpeg" data-lightbox="image">
-                <img class="photo" src="photos_small/11s.jpg">
-            </a>
-            <a class="big" href="photos/12.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/12s.jpg">
-            </a>
-            <a class="big" href="photos/13.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/13s.jpg">
-            </a>
-            <a class="big" href="photos/14.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/14s.jpg">
-            </a>
-            <a class="big" href="photos/15.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/15s.jpg">
-            </a>
-            <a class="big" href="photos/16.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/16s.jpg">
-            </a>
-            <a class="big" href="photos/17.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/17s.jpg">
-            </a>
-            <a class="big" href="photos/18.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/18s.jpg">
-            </a>
-            <a class="big" href="photos/19.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/19s.jpg">
-            </a>
-            <a class="big" href="photos/20.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/20s.jpg">
-            </a>
-            <a class="big" href="photos/21.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/21s.jpg">
-            </a>
-            <a class="big" href="photos/22.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/22s.jpg">
-            </a>
-            <a class="big" href="photos/23.jpeg" data-lightbox="image">
-                <img class="photo" src="photos_small/23s.jpg">
-            </a>
-            <a class="big" href="photos/24.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/24s.jpg">
-            </a>
-            <a class="big" href="photos/25.jpg" data-lightbox="image">
-                <img class="photo" src="photos_small/25s.jpg">
-            </a>
+        <div class="text">        
+            <span class="first">Cute little Friends</span>
+            <span class = "second"></span>
+            <span class = "third">AGNIESZKA LISZKA</span>
         </div>
-    </section>
-    <script src="navbar.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script class="lightbox" src="dist/js/lightbox.js"></script>   
-    <script>
-        // const bigImages = document.querySelectorAll(".big").getAttribute("href");
-        document.querySelector('.menu').addEventListener("click", function () {
-            document.querySelector('.menu').classList.add("clicked")
-        })    
-        document.querySelector('.menu').addEventListener("mouseout", function () {
-            document.querySelector('.menu').classList.remove("clicked") 
-        })
-    </script>
+        <div class="button"><a href="home.html">Open gallery</a></div>
+    </div>
 </body>
 </html>

@@ -20,7 +20,7 @@ function hrefBack() {
     $(this).parent().attr("href", $getHref);
 }
 
-Array.prototype.remove = function() {   // function to remove string from a list
+Array.prototype.remove = function() {   // function to remove selected element from a list
     var what, a = arguments, L = a.length, ax;
     while (L && this.length) {
         what = a[--L];
